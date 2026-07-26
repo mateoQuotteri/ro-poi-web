@@ -412,7 +412,7 @@ em{ font-style: italic; color: var(--copper); font-weight: 500; }
 }
 
 /* =================================================================
-   PLANS (NEXO)
+   PLANS (PLAN POI)
    ================================================================= */
 .plan-split{ display:grid; grid-template-columns: 1fr 1fr; border-radius:6px; overflow:hidden; }
 .plan-card{ padding: 3rem; }
@@ -524,8 +524,16 @@ em{ font-style: italic; color: var(--copper); font-weight: 500; }
 .footer__side{ padding: 3rem 2rem; display:flex; flex-direction:column; justify-content:center; }
 .footer__side--light{ background: var(--cream-deep); align-items:flex-start; }
 .footer__side--dark{ background: var(--panel); color: var(--cream); }
-.footer__institutions-label{ font-family: var(--mono); font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase; color: var(--copper-light); margin: 0 0 0.5rem; }
-.footer__institutions{ color: rgba(244,233,221,0.75); font-size:0.95rem; margin:0; }
+.footer__institutions-label{ font-family: var(--mono); font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase; color: var(--copper-light); margin: 0 0 1rem; }
+.footer__institutions-logos{ display:flex; align-items:center; gap: 1rem; flex-wrap: wrap; }
+.footer__institution-badge{
+  display:inline-flex; align-items:center; justify-content:center;
+  background: var(--cream);
+  border-radius: 6px;
+  padding: 0.7rem 1.1rem;
+  height: 52px;
+}
+.footer__institution-badge img{ height: 100%; width:auto; display:block; }
 .footer__bottom{ text-align:center; padding: 1.4rem; background: var(--ink); }
 .footer__bottom p{ margin:0; color: rgba(244,233,221,0.55); font-size:0.82rem; }
 
